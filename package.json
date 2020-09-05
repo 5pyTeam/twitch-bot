@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "debug": "node index.js | pino-pretty"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Yohan Zbinden",
+  "license": "MIT",
   "dependencies": {
-    "discord": "^0.8.2"
+    "discord": "^0.8.2",
+    "discord.js": "^12.3.1",
+    "discord.js-commando": "github:discordjs/commando",
+    "pino": "^6.5.1"
+  },
+  "devDependencies": {
+    "pino-pretty": "^4.2.0"
   }
 }
