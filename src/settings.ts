@@ -10,7 +10,7 @@ const settingsPath = path.resolve('settings.json')
 let settings: iSettings
 
 const settingsSchema =
-    '{"token":"your discord token", "client-id":"your twitch client-id","oauth2-token":"your twitch oauth2 token"}'
+    '{"token":"your discord token", "clientId":"your twitch client-id","oauth2token":"your twitch oauth2 token"}'
 if (!fs.existsSync(settingsPath)) {
     fs.writeFileSync(settingsPath, settingsSchema)
     logger.error('settings file created you need now to edit it')

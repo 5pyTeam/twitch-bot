@@ -1,6 +1,8 @@
 const path = require('path')
 const { CommandoClient } = require('discord.js-commando')
+const cron = require('node-cron')
 const logger = require('pino')()
+import { Requests } from './req'
 import { Settings } from './settings'
 const client = new CommandoClient({
     commandPrefix: '!',
@@ -17,3 +19,11 @@ client.once('ready', () => {
 })
 client.on('error', logger.error)
 client.login(Settings.getToken())
+console.log(
+    Requests.getUsersLive(['5py_yoyozbi', 'sardoche', 'doigby', 'gotaga'])
+)
+/*cron.schedule('* * * * * *', () => {
+    logger.info(
+        Requests.getUsersLive(['5py_yoyozbi', 'sardoche', 'doigby', 'gotaga'])
+    )
+})*/
