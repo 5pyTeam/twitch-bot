@@ -1,3 +1,4 @@
 node_modules/
-settings.json
+src/settings.json
 .idea/
+build/
