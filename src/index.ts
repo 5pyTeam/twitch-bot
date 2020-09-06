@@ -19,11 +19,11 @@ client.once('ready', () => {
 })
 client.on('error', logger.error)
 client.login(Settings.getToken())
-console.log(
-    Requests.getUsersLive(['5py_yoyozbi', 'sardoche', 'doigby', 'gotaga'])
-)
-/*cron.schedule('* * * * * *', () => {
-    logger.info(
-        Requests.getUsersLive(['5py_yoyozbi', 'sardoche', 'doigby', 'gotaga'])
-    )
-})*/
+//console.log(Requests.getUsersLive(['deujna', 'sardoche', 'doigby', 'gotaga']))
+cron.schedule('* * * * * *', () => {
+    Requests.getUsersLive(['deujna', 'jeeltv', 'doigby', 'gotaga'], function (
+        streamers: String[]
+    ) {
+        if (streamers.length > 0) console.log(streamers)
+    })
+})
