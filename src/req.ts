@@ -1,13 +1,12 @@
 import { AxiosError, AxiosResponse } from 'axios'
-const logger = require('pino')()
+import { log } from './log'
 const fs = require('fs')
-import { Settings } from './settings'
 const axios = require('axios').default
 const defaultUrl = 'https://api.twitch.tv/helix'
 const config = {
     headers: {
-        Authorization: `Bearer ${Settings.getOauth2token()}`,
-        'Client-ID': Settings.getClientId(),
+        Authorization: `Bearer ${process.env.TWITCH_OAUTH}`,
+        'Client-ID': process.env.TWITCH_CLIENTID,
     },
 }
 
@@ -18,7 +17,7 @@ class Requests {
             .get(defaultUrl + `/streams?user_login=${username}`)
             .then(function (response: AxiosResponse) {})
             .catch(function (error: AxiosError) {
-                logger.error(error)
+                log.error(error)
             })
     }
     static async getUsersLive(usernames: String[], callback: CallableFunction) {
@@ -36,8 +35,8 @@ class Requests {
             method: 'get',
             url: defaultUrl + `/streams${paramsString}`,
             headers: {
-                Authorization: `Bearer ${Settings.getOauth2token()}`,
-                'Client-ID': Settings.getClientId(),
+                Authorization: `Bearer ${process.env.TWITCH_OAUTH}`,
+                'Client-ID': process.env.TWITCH_CLIENTID,
             },
         })
             .then((response: AxiosResponse) => {
@@ -51,7 +50,7 @@ class Requests {
                 wasLive = allLives
             })
             .catch(function (error: AxiosError) {
-                logger.error(error)
+                log.error(error)
             })
     }
     static wasLive(username: String): Boolean {

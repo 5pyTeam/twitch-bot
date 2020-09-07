@@ -27,12 +27,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996e833c-8e95-4eb1-91aa-037aa113dd9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/log.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/twitch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/req.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/req.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +53,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -59,6 +66,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mongo" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
@@ -66,7 +74,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\yohan\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="C:\Users\yohan\Documents\code\twitch-bot\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -84,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599310193925</updated>
       <workItem from="1599310195182" duration="593000" />
-      <workItem from="1599384800654" duration="2686000" />
+      <workItem from="1599384800654" duration="11366000" />
     </task>
     <servers />
   </component>
@@ -116,6 +124,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599390163290">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1536.840/-1080.-464.1080.1890/0.0.1920.1050@0.0.1920.1050" timestamp="1599390163290" />
+    <state x="717" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599390327512">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="717" y="326" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1536.840/-1080.-464.1080.1890/0.0.1920.1050@0.0.1920.1050" timestamp="1599390327512" />
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599339090481">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -124,9 +140,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="794" y="448" key="NewPhpFileDialog/1920.0.1536.840/-1080.-464.1080.1890/0.0.1920.1050@0.0.1920.1050" timestamp="1599337559668" />
-    <state x="461" y="169" key="SettingsEditor" timestamp="1599317051777">
+    <state x="461" y="169" key="SettingsEditor" timestamp="1599491981443">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="169" key="SettingsEditor/1920.0.1536.840/-1080.-464.1080.1890/0.0.1920.1050@0.0.1920.1050" timestamp="1599317051777" />
+    <state x="461" y="169" key="SettingsEditor/1920.0.1536.840/-1080.-464.1080.1890/0.0.1920.1050@0.0.1920.1050" timestamp="1599491981443" />
   </component>
 </project>
