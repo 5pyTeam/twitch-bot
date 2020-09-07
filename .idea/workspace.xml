@@ -27,18 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996e833c-8e95-4eb1-91aa-037aa113dd9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/log.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twitch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/req.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/req.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twitch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/twitch.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599310193925</updated>
       <workItem from="1599310195182" duration="593000" />
-      <workItem from="1599384800654" duration="11366000" />
+      <workItem from="1599384800654" duration="11733000" />
     </task>
     <servers />
   </component>
